@@ -3065,14 +3065,6 @@
         }
         const da = new DynamicAdapt("max");
         da.init();
-        function initSkillsDecor() {
-            const wrapper = document.querySelector(".skills-decor");
-            const items = wrapper.querySelectorAll(".skills-decor__item-wrapper");
-            const availableIntervalForMargin = wrapper.clientHeight - items[0].clientHeight;
-            items.forEach((item => {
-                item.style.marginTop = `${availableIntervalForMargin * Math.random()}px`;
-            }));
-        }
         function showPortfolio() {
             const wrapper = document.querySelector(".portfolio");
             const button = wrapper.querySelector(".portfolio__button");
@@ -3087,7 +3079,6 @@
             }));
         }
         function DOMLoad() {
-            if (document.querySelector(".skills-decor")) initSkillsDecor();
             if (document.querySelector(".portfolio")) showPortfolio();
         }
         document.addEventListener("DOMContentLoaded", DOMLoad);
