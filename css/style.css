@@ -319,7 +319,7 @@ body {
   -webkit-animation: wave 5s infinite linear;
           animation: wave 5s infinite linear;
   position: absolute;
-  top: calc(100% - 5px);
+  top: calc(100% - 1px);
   left: 0;
   width: 200vw;
   pointer-events: none;
